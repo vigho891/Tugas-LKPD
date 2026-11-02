@@ -1,0 +1,12 @@
+table {
+background-color: white;
+width: 80%; /* Membuat tabel memanjang 80% dari lebar layar */
+text-align: center;
+}
+th {
+background-color: black;
+color: white; /* Mengubah warna teks judul kolom menjadi putih */
+}
+td {
+color: darkblue;
+}
