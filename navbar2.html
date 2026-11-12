@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body { margin: 0; font-family: Arial, sans-serif; }
+.navbar {
+background-color: #1a237e;
+color: white;
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-link {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link a {
+    color: white;
+    text-decoration: none;
+}
+/* ATURAN KHUSUS LAYAR HP (Batas Lebar 600px) */
+@media screen and (max-width: 600px) {
+    /* Mengubah Bapak Navbar agar susunannya tidak menyamping, tapi ke bawah */
+    .navbar {
+        flex-direction: row-reverse; /* Isi dengan lawan dari 'row' */
+        text-align: center;
+    }
+
+    /* Mengubah menu ul li agar turun ke bawah dan memberi jarak */
+    .menu-link {
+        flex-direction: column;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* Memperbesar area klik tombol agar nyaman di jari */
+    .menu-link li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+}
+
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>SMK MUH 3 TANGSEL</div>
+        <ul class="menu-link">
+     <li><a href="">Beranda</a></li>
+     <li><a href="">Profil Jurusan</a></li>
+     <li><a href="">Kontak</a></li>
+    </ul>
+    </nav>
+    
+</body>
+</html>
