@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<!-- SYARAT WAJIB 1: Tag Viewport agar web bisa merespons ukuran layar HP
+nanti -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTS Praktik - [Web RPL]</title>
+<!-- CATATAN PENTING: Hari ini kita fokus menyelesaikan HTML dulu.
+Kode <style> CSS baru akan kita kerjakan pada Pertemuan ke-2! -->
+</head>
+<body>
+<!-- =================================================================
+BAGIAN 1: NAVBAR (Menu Navigasi Atas)
+================================================================= -->
+<div class="navbar">
+<div class="logo">
+<h2>SMK MUHAMMADIYAH 3</h2>
+</div>
+<ul class="menu-navigasi">
+<li><a href="#beranda">Beranda</a></li>
+<li><a href="#fitur">Keunggulan</a></li>
+<li><a href="#interaksi">Info</a></li>
+</ul>
+</div>
+<!-- =================================================================
+BAGIAN 2: HERO SECTION (Banner Pembuka Utama)
+Memiliki 2 kotak anak: .hero-teks (Kiri) dan .hero-gambar (Kanan)
+================================================================= -->
+<div class="hero" id="beranda">
+<!-- Anak 1: Kolom Teks & Tombol Utama -->
+<div class="hero-teks">
+<h1>PENGENALAN HAL MENARIK TENTANG REKAYASA PERANGKAT LUNAK</h1>
+<p>
+RPL mempunyai keunggulan yang merujuk kepada programmer, cyber security, php, dan lain lain. terutama cyber security yang sangat dibutuhkan sekali untuk jaman sekarang, dikarenakan negara -negara sekitar sedang terkena serangan cyber  terhadap bank bank yang digunakan untuk keseharian yang bisa melandakan kepada kekacauan yang sangat besar.
+</p>
+<a href="#interaksi" class="tombol-utama">Tombol Aksi Utama
+(CTA)</a>
+</div>
+<!-- Anak 2: Kolom Gambar Utama -->
+<div class="hero-gambar">
+<!-- Tips: Kamu bisa memakai foto dari folder 'img/' atau link
+gambar online sementara -->
+<img src="coding.jpg" height="300px" width="350px" alt="Gambar Utama Hero">
+</div>
+</div>
+<!-- =================================================================
+BAGIAN 3: CONTENT SECTION (Wadah Flexbox 3 Kolom Sejajar)
+================================================================= -->
+<div class="bagian-konten" id="fitur">
+<h2 class="judul-bagian">Salah Satu Potensial Keahlian RPL </h2>
+<!-- Wadah Pembungkus 3 Kartu (Nantinya akan diberi display: flex di
+Pertemuan 2) -->
+<div class="wadah-tiga-kolom">
+<!-- KARTU 1 -->
+<div class="kartu">
+<img src="programmer.jpg" height="200px" width="300px"  alt="Ikon atau Produk
+1">
+<h3>Programmer</h3>
+<p>seorang profesional yang bertugas menulis, merancang, menguji, dan memelihara kode program untuk membangun perangkat lunak, aplikasi, atau sistem komputer menggunakan bahasa pemrograman tertentu.</p>
+
+</div>
+<!-- KARTU 2 -->
+<div class="kartu">
+<img src="cyber.jpg" height="200px" width="300px" alt="cyber security
+">
+<h3>Cyber security</h3>
+<p>teknologi, dan kebijakan yang dirancang untuk melindungi sistem komputer, jaringan, perangkat, program, serta data dari serangan, kerusakan, atau akses yang tidak sah.</p>
+</div>
+<!-- KARTU 3 -->
+<div class="kartu">
+<img src="web.jpg" height="200px" width="300px" alt="web developer">
+<h3>Web developer</h3>
+<p>profesional teknologi yang merancang, membangun, mengelola, serta memastikan performa situs web dan aplikasi berbasis web tetap stabil.</p>
+</div>
+</div>
+</div>
+
+<div class="bagian-interaksi" id="interaksi">
+
+<h2 class="judul-bagian">Daftar Mata Pelajaran Produktif RPL</h2>
+<table border="1" cellpadding="10" cellspacing="0" class="tabel-rpl">
+<thead>
+<tr>
+<th>Tingkat Kelas</th>
+<th>Mata Pelajaran Utama</th>
+<th>Proyek Praktikum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kelas X RPL</td>
+<td>Algoritma, Dasar Pemrograman Python, HTML & CSS
+Dasar</td>
+<td>Landing Page Responsif & Aplikasi Kasir Sederhana</td>
+</tr>
+<tr>
+<td>Kelas XI RPL</td>
+<td>Pemrograman Web Dinamis (PHP Native) & Basis Data
+MySQL</td>
+<td>Sistem Informasi Perpustakaan (CRUD & Login)</td>
+</tr>
+<tr>
+<td>Kelas XII RPL</td>
+<td>Framework Laravel, Pengujian Keamanan Web, & Persiapan
+UKK</td>
+<td>Aplikasi Web Full-Stack Siap Industri</td>
+</tr>
+
+  
+  </tbody>
+</table>
+</div>
+
+  <h2 class="judul-bagian">Hubungi Saya</h2>
+<form action="#" method="POST" class="form-pts">
+<div class="grup-input">
+<label for="nama">Nama Lengkap:</label><br>
+<input type="text" id="nama" name="nama" placeholder="Masukkan
+nama Anda..." required>
+</div>
+<br>
+<div class="grup-input">
+<label for="email">Alamat Email:</label><br>
+<input type="email" id="email" name="email"
+placeholder="contoh@email.com" required>
+</div>
+<br>
+<div class="grup-input">
+<label for="pesan"> Catatan:</label><br>
+<textarea id="catatan" name="catatan" rows="4" placeholder="Tulis
+catatan Anda di sini..."></textarea>
+</div>
+<br>
+<button type="submit" class="tombol-kirim">Daftar Sekarang</button>
+</form>
+
+<div class="footer">
+<p>&copy; 2026 Proyek PTS Pemrograman Web - Dibuat oleh [Aymad Vigho] (Kelas XI RPL - SMK Muhammadiyah 3 Tangerang Selatan).</p>
+</div>
+</body>
+</html>
